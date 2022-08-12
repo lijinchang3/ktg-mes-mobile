@@ -1,6 +1,6 @@
 <template>
 	<view class="wrap">
-		<view class="logo">若依移动APP</view>
+		<view class="logo">苦糖果MES手机端</view>
 		<div v-if="loginType === 'currentPhone'">
 		<u-tabs :list="list" :is-scroll="false" :current="current" @change="onClickItem"></u-tabs>
 		<view v-if="current === 0">
@@ -24,16 +24,6 @@
 				</div>
 			</view>
 			<view class="button"  @click="submit('1')"><text>登录</text></view>
-			<view class="login-bottom-box">
-				<u-divider> 更多登录方式 </u-divider>
-				<view class="oauth2">
-					<u-icon class="u-icon" size="100" color="#36c956" name="weixin-circle-fill" @click="wxLogin"></u-icon>
-					<u-icon class="u-icon" size="100" color="#23a0f0" name="qq-circle-fill" @click="qqLogin"></u-icon>
-				</view>
-				<view class="copyright">
-					登录即代表您已阅读并同意<u-link href="#">用户协议</u-link> 与 <u-link href="#">隐私政策</u-link>
-				</view>
-			</view>
 		</view>
 		<view v-if="current === 1">
 			<view class="list">
@@ -54,17 +44,6 @@
 				
 			</view>
 			<view class="button"  @click="nextStep()"><text>下一步</text></view>
-			<view class="login-bottom-box">
-				<u-divider> 更多登录方式 </u-divider>
-				<view class="oauth2">
-					<u-icon class="u-icon" size="100" color="#36c956" name="weixin-circle-fill" @click="wxLogin"></u-icon>
-					<u-icon class="u-icon" size="100" color="#23a0f0" name="qq-circle-fill" @click="qqLogin"></u-icon>
-				</view>
-				<view class="copyright">
-					登录即代表您已阅读并同意<u-link href="#">用户协议</u-link> 与 <u-link href="#">隐私政策</u-link>
-				</view>
-			</view>
-			
 		</view>
 		</div>
 		

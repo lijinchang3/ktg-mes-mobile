@@ -36,11 +36,17 @@
 		{
 			"path": "pages/sys/home/index",
 			"style": {
-				"navigationBarTitleText": "工作台",
-				"navigationStyle": "custom" // 隐藏系统导航栏
-				
+				"navigationStyle": "custom"				
 			}
 		},
+		// {
+		// 	"path": "pages/sys/home/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "工作台",
+		// 		"navigationStyle": "custom" // 隐藏系统导航栏
+				
+		// 	}
+		// },
 		{
 			"path": "pages/sys/user/index",
 			"style": {
@@ -226,30 +232,30 @@
 		"backgroundColor": "#ffffff",
 		"borderStyle": "white",
 		"list": [
-			 {
-				"pagePath": "pages/sys/msg/index",
-				"iconPath": "static/aidex/tabbar/msg_1.png",
-				"selectedIconPath": "static/aidex/tabbar/msg_2.png",
-				"text": "消息"
-			},
-			// {
-			// 	"pagePath": "pages/sys/home/index",
-			// 	"iconPath": "static/aidex/tabbar/home_1.png",
-			// 	"selectedIconPath": "static/aidex/tabbar/home_2.png",
-			// 	"text": "首页"
+			//  {
+			// 	"pagePath": "pages/sys/msg/index",
+			// 	"iconPath": "static/aidex/tabbar/msg_1.png",
+			// 	"selectedIconPath": "static/aidex/tabbar/msg_2.png",
+			// 	"text": "消息"
 			// },
+			{
+				"pagePath": "pages/sys/home/index",
+				"iconPath": "static/aidex/tabbar/home_1.png",
+				"selectedIconPath": "static/aidex/tabbar/home_2.png",
+				"text": "首页"
+			},
 			{
 				"pagePath": "pages/sys/workbench/index",
 				"iconPath": "static/aidex/tabbar/apply_1.png",
 				"selectedIconPath": "static/aidex/tabbar/apply_2.png",
 				"text": "工作台"
 			},
-			{
-				"pagePath": "pages/sys/book/index",
-				"iconPath": "static/aidex/tabbar/book_1.png",
-				"selectedIconPath": "static/aidex/tabbar/book_2.png",
-				"text": "通讯录"
-			},
+			// {
+			// 	"pagePath": "pages/sys/book/index",
+			// 	"iconPath": "static/aidex/tabbar/book_1.png",
+			// 	"selectedIconPath": "static/aidex/tabbar/book_2.png",
+			// 	"text": "通讯录"
+			// },
 			{
 				"pagePath": "pages/sys/user/index",
 				"iconPath": "static/aidex/tabbar/my_1.png",

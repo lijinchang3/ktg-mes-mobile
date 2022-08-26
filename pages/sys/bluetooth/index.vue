@@ -26,13 +26,20 @@
 		
 		data(){
 			return {
+				//蓝牙相关
 				blutoothSearchFlag: false,
 				deviceList: [],//蓝牙设备清单			
 				services: [],//蓝牙设备的服务清单
 				serviceId: 0, //当前使用的服务
 				writeCharacter: false,
 				readCharacter: false,
-				notifyCharacter: false
+				notifyCharacter: false,
+				//打印相关
+				sendContent: "",
+				buffSize: [],
+				buffIndex: 0,
+				printNum: 1,
+				currentPrint: 1
 			}
 		},
 		computed: mapState(['vuex_bluetooth']),
@@ -290,6 +297,10 @@
 				})
 			},
 			print(){
+				var command = esc.jpPrinter.createNew();
+				command.init();
+				command.sendText("测试数据");
+				command.setPrintAndFeedRow(1);
 				
 			}
 		}

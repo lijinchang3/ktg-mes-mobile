@@ -165,7 +165,7 @@ export default {
 				if (res.code == '200') {
 					setTimeout(() => {
 						uni.reLaunch({
-							url: '/pages/sys/msg/index'
+							url: '/pages/sys/home/index'
 						});
 					}, 500);
 				}

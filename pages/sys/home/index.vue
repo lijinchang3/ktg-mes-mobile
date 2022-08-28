@@ -7,7 +7,7 @@
 					<view class="shortcut-icon icon-color01">
 						<i class="iconfont icon-qingjia"></i>
 					</view>
-					<view class="grid-text">请假申请</view>
+					<view class="grid-text">生产报工</view>
 				</u-grid-item>
 				<u-grid-item @click="navTo('/pages/sys/workbench/add-form')" >
 					<view class="shortcut-icon icon-color02">
